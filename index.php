@@ -20,14 +20,14 @@ ini_set('default_socket_timeout',560);
 	include 'class.smtp.php';
 	include 'invoice-template.php';
 	$mail = new PHPMailer;
-	/*$mail->isSMTP();
+	$mail->isSMTP();
 	$mail->SMTPDebug = 1;
 	$mail->SMTPAuth = true;
 	$mail->Host = 'smtp.gmail.com';
 	$mail->Port = 465;
 	$mail->SMTPSecure = 'ssl';
 	$mail->Username = "invoicegenerated@gmail.com";
-	$mail->Password = "invoice@generated";*/
+	$mail->Password = "invoice@generated";
 	$mail->setFrom('invoicegenerated@gmail.com',$mailerData->companyName);
 	$mail->addAddress($mailerData->accountEmail, $mailerData->accountName);
 	$mail->Subject = 'Invoice #'.$mailerData->billId.' on '.str_replace('/','-',$mailerData->billDate);
