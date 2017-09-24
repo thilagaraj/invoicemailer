@@ -1,6 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");  
-error_reporting(~0);
+error_reporting(0);
 ini_set('file_uploads','On');
 ini_set('post_max_size','150M');
 ini_set('upload_max_filesize','150M');
