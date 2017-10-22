@@ -1,5 +1,8 @@
 <?php
 header("Access-Control-Allow-Origin: *");  
+header("Access-Control-Allow-Origin:true");  
+header("Access-Control-Allow-Headers: Content-Type,cache-control,withCredentials, X-Requested-With, X-authentication, X-client,authorization");  
+    
 error_reporting(0);
 ini_set('file_uploads','On');
 ini_set('post_max_size','150M');
