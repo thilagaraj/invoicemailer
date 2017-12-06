@@ -28,7 +28,7 @@ ini_set('default_socket_timeout',560);
 	$mail->Port = 465;
 	$mail->SMTPSecure = 'ssl';
 	$mail->Username = "invoicegenerated@gmail.com";
-	$mail->Password = "invoice@generated";
+	$mail->Password = "Invoice@1990";
 	$mail->setFrom('invoicegenerated@gmail.com',$mailerData->companyName);
 	$mail->addAddress($mailerData->accountEmail, $mailerData->accountName);
 	$mail->Subject = 'Invoice #'.$mailerData->billId.' on '.str_replace('/','-',$mailerData->billDate);
