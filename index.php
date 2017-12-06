@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: *"); 
+header("Access-Control-Allow-Origin: http://demo.vijayanbrothers.com"); 
 header("Access-Control-Allow-Headers: Content-Type,cache-control,withCredentials, X-Requested-With, X-authentication, X-client,authorization");  
     
 //error_reporting(0);
@@ -36,7 +36,7 @@ ini_set('default_socket_timeout',560);
 	$mail->Body =$template;
 	$mail->addAttachment($fname);
 	if (!$mail->send()) {
-		print_r($mail->ErrorInfo);
+		//print_r($mail->ErrorInfo);
 		echo 0;
 	} else {
 		echo 1;
