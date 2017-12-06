@@ -2,7 +2,7 @@
 header("Access-Control-Allow-Origin: *"); 
 header("Access-Control-Allow-Headers: Content-Type,cache-control,withCredentials, X-Requested-With, X-authentication, X-client,authorization");  
     
-error_reporting(0);
+//error_reporting(0);
 ini_set('file_uploads','On');
 ini_set('post_max_size','150M');
 ini_set('upload_max_filesize','150M');
