@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: http://demo.vijayanbrothers.com"); 
+header("Access-Control-Allow-Origin: *"); 
 header("Access-Control-Allow-Headers: Content-Type,cache-control,withCredentials, X-Requested-With, X-authentication, X-client,authorization");  
     
 //error_reporting(0);
