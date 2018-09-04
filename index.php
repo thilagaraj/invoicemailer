@@ -36,7 +36,7 @@ ini_set('default_socket_timeout',560);
 	$mail->Body =$template;
 	$mail->addAttachment($fname);
 	if (!$mail->send()) {
-		//print_r($mail->ErrorInfo);
+		print_r($mail->ErrorInfo);
 		echo 0;
 	} else {
 		echo 1;
