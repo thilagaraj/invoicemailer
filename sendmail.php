@@ -26,7 +26,7 @@ ini_set('default_socket_timeout',560);
 	$mail->Host = 'smtp.gmail.com';
 	$mail->Port = 465;
 	$mail->SMTPSecure = 'ssl';
-	$mail->Username = "invoicegenerated@gmail.com";
+	$mail->Username = "pazhanamcorp@gmail.com";
 	$mail->Password = "invoice@generated";*/
 	$mail->setFrom('invoicegenerated@gmail.com',$mailerData->companyName);
 	$mail->addAddress($mailerData->accountEmail, $mailerData->accountName);
