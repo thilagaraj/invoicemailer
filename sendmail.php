@@ -1,4 +1,4 @@
-<?php echo (extension_loaded('openssl')?'SSL loaded':'SSL not loaded')."\n"; ?>
+<?php echo (extension_loaded('openssl')?'SSL loaded':'SSL not loaded')."\n"; exit(0);?>
 <?php
 header("Access-Control-Allow-Origin: *");  
 error_reporting(~0);
