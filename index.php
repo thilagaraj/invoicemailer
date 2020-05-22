@@ -2,7 +2,7 @@
 header("Access-Control-Allow-Origin: *"); 
 header("Access-Control-Allow-Headers: Content-Type,cache-control,withCredentials, X-Requested-With, X-authentication, X-client,authorization");  
     
-//error_reporting(0);
+error_reporting(0);
 ini_set('file_uploads','On');
 ini_set('post_max_size','150M');
 ini_set('upload_max_filesize','150M');
@@ -23,14 +23,14 @@ ini_set('default_socket_timeout',560);
 	include 'invoice-template.php';
 	$mail = new PHPMailer;
 	$mail->isSMTP();
-        $mail->SMTPDebug = 2;
+        $mail->SMTPDebug = 1;
 	$mail->SMTPAuth = true;
 	$mail->Host = 'sg2plcpnl0108.prod.sin2.secureserver.net';
 	$mail->Port = 465;
 	$mail->SMTPSecure = 'ssl';
 	$mail->Username = "info@pazhanam.com";
 	$mail->Password = "raA5m9!Y]fd!";
-	$mail->setFrom('info@pazhanam.com',$mailerData->companyName);
+	$mail->setFrom('invoicegenerated@gmail.com',$mailerData->companyName);
 	$mail->addAddress($mailerData->accountEmail, $mailerData->accountName);
 	$mail->Subject = 'Invoice #'.$mailerData->billId.' on '.str_replace('/','-',$mailerData->billDate);
 	$mail->isHTML(true);	
