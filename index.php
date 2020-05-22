@@ -25,7 +25,7 @@ ini_set('default_socket_timeout',560);
 	$mail->isSMTP();
         $mail->SMTPDebug = 1;
 	$mail->SMTPAuth = true;
-	$mail->Host = 'smtp.gmail.com';
+	$mail->Host = 'ssl://smtp.gmail.com';
 	$mail->Port = 465;
 	$mail->SMTPSecure = 'ssl';
 	$mail->Username = "invoicegenerated@gmail.com";
