@@ -25,7 +25,7 @@ ini_set('default_socket_timeout',560);
 	$mail->isSMTP();
         $mail->SMTPDebug = 1;
         $mail->SMTPAutoTLS = false;
-	$mail->SMTPAuth = true;
+	$mail->SMTPAuth = false;
 	$mail->Host = 'sg2plcpnl0108.prod.sin2.secureserver.net';
 	$mail->Port = 587;
 	$mail->SMTPSecure = 'tls';
