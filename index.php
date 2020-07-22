@@ -24,6 +24,7 @@ ini_set('default_socket_timeout',560);
 	$mail = new PHPMailer;
 	$mail->isSMTP();
         $mail->SMTPDebug = 1;
+        $mail->SMTPAutoTLS = false;
 	$mail->SMTPAuth = true;
 	$mail->Host = 'sg2plcpnl0108.prod.sin2.secureserver.net';
 	$mail->Port = 587;
