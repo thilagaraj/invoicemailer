@@ -23,7 +23,7 @@ ini_set('default_socket_timeout',560);
 	include 'invoice-template.php';
 	$mail = new PHPMailer;
 	$mail->isSMTP();
-        $mail->SMTPDebug = 1;
+        //$mail->SMTPDebug = 1;
         //$mail->SMTPAutoTLS = false;
 	$mail->SMTPAuth = true;
 	$mail->Host = 'smtp-relay.sendinblue.com';
