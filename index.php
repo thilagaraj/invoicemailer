@@ -28,7 +28,7 @@ ini_set('default_socket_timeout',560);
 	$mail->SMTPAuth = true;
 	$mail->Host = 'sg2plcpnl0108.prod.sin2.secureserver.net';
 	$mail->Port = 587;
-	$mail->SMTPSecure = 'tls';
+	//$mail->SMTPSecure = 'tls';
 	$mail->Username = "info@pazhanam.com";
 	$mail->Password = "raA5m9!Y]fd!";
 	$mail->setFrom('info@pazhanam.com',$mailerData->companyName);
