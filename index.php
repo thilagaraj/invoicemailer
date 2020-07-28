@@ -31,7 +31,7 @@ ini_set('default_socket_timeout',560);
 	$mail->SMTPSecure = 'tls';
 	$mail->Username = "d58a4c38966abfa4c85ae1a0ed2a42a1";
 	$mail->Password = "40f7bfd4f7478f1c0e7391a6b1ce019c";
-	$mail->setFrom('webandcms@gmail.com',$mailerData->companyName);
+	$mail->setFrom('info@webandcms.com',$mailerData->companyName);
 	$mail->addAddress($mailerData->accountEmail, $mailerData->accountName);
 	$mail->Subject = 'Invoice #'.$mailerData->billId.' on '.str_replace('/','-',$mailerData->billDate);
 	$mail->isHTML(true);	
